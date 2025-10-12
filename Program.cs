@@ -52,6 +52,10 @@ var app = builder.Build();
 
 using (var scope = app.Services.CreateScope())
 {
+    // Ensure database is created and up to date before seeding roles
+    var db = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+    await db.Database.MigrateAsync();
+
     var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
     string[] roles = { "Admin", "SchoolNurse" };
 
@@ -74,9 +78,8 @@ else
 {
     app.UseExceptionHandler("/Error", createScopeForErrors: true);
     app.UseHsts();
+    app.UseHttpsRedirection();
 }
-
-app.UseHttpsRedirection();
 
 app.UseAntiforgery();
 
