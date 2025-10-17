@@ -197,6 +197,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFNoYXJlZFxTdGF0dXNNZXNzYWdlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/DMT_3/source/repos/d4nnywoods/VaxSync/Components/Account/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XF9JbXBvcnRzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/DMT_3/source/repos/d4nnywoods/VaxSync/Components/Alerts/AlertsList.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBbGVydHNcQWxlcnRzTGlzdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -235,10 +239,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/DMT_3/source/repos/d4nnywoods/VaxSync/Components/Pages/NurseDashboard.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xOdXJzZURhc2hib2FyZC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/DMT_3/source/repos/d4nnywoods/VaxSync/Components/Pages/Ping.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQaW5nLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/DMT_3/source/repos/d4nnywoods/VaxSync/Components/Pages/ViewerDashboard.razor]

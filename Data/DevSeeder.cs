@@ -55,7 +55,7 @@ public static class DevSeeder
             await db.SaveChangesAsync();
         }
 
-        // 3) Schools (≈860). Uses your School model (string Id, Code, Name). :contentReference[oaicite:11]{index=11}
+        // 3) Schools (5). Uses your School model (string Id, Code, Name). :contentReference[oaicite:11]{index=11}
         if (!await db.Schools.AnyAsync())
         {
             var schools = new List<School>(schoolCount);

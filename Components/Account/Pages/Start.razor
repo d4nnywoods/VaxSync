@@ -1,7 +1,7 @@
 @page "/"
 @page "/home"
 @using MudBlazor
-@using Microsoft.AspNetCore.Components.Authorization
+@attribute [AllowAnonymous]
 @inject NavigationManager Nav
 @inject AuthenticationStateProvider AuthState
 
@@ -58,6 +58,15 @@
         <MudText Typo="Typo.subtitle1" Class="opacity-75 mb-4">
             Track compliance, view alerts, and export records with confidence.
         </MudText>
+
+        <div class="vx-buttons">
+            <MudButton Href="/Account/Login" Color="Color.Primary" Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Login">
+                Login
+            </MudButton>
+            <MudButton Href="/about" Color="Color.Secondary" Variant="Variant.Outlined">
+                Learn more
+            </MudButton>
+        </div>
     </section>
 
     <section class="vx-right"></section>
@@ -70,35 +79,20 @@
     {
         if (!firstRender || _navigated) return;
 
-        var here = new Uri(Nav.Uri).AbsolutePath;
-
         try
         {
             var state = await AuthState.GetAuthenticationStateAsync();
             var authed = state.User?.Identity?.IsAuthenticated == true;
-
-            var target = authed ? "/dashboard" : "/Account/Login";
-
-            // don’t navigate if we’re already at the target
-            if (Is(here, target)) return;
-
-            _navigated = true; // set before navigating to prevent re-entry loops
-            await InvokeAsync(() => Nav.NavigateTo(target, new NavigationOptions
+            if (authed)
             {
-                ReplaceHistoryEntry = true,
-                ForceLoad = false
-            }));
-        }
-        catch (Microsoft.AspNetCore.Components.NavigationException)
-        {
-            // harmless during prerender; interactive pass will handle it
+                _navigated = true;
+                Nav.NavigateTo("/dashboard", new NavigationOptions { ReplaceHistoryEntry = true });
+            }
+            // if not authed: we render the landing; no auto-redirect
         }
         catch
         {
-            // let the ErrorBoundary surface details, don’t kill first render
+            // ignore; landing still renders
         }
     }
-
-    private static bool Is(string path, string target) =>
-        string.Equals(path, target, StringComparison.OrdinalIgnoreCase);
 }

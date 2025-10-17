@@ -2,7 +2,6 @@ using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using MudBlazor.Services;
-using VaxSync.Web;
 using VaxSync.Web.Components.Account;
 using VaxSync.Web.Components;
 using VaxSync.Web.Data;
@@ -21,7 +20,7 @@ internal class Program
         // ---- Database ----
         var csFolder = Path.Combine(builder.Environment.ContentRootPath, "App_Data");
         Directory.CreateDirectory(csFolder); // ensures folder exists even on new branches
-        var dbPath = Path.Combine(csFolder, "vaxsync_dev.db");
+        var dbPath = Path.Combine(csFolder, "vaxsync_dev2.db");
 
         builder.Services.AddDbContext<ApplicationDbContext>(o =>
             o.UseSqlite($"Data Source={dbPath}"));
@@ -71,82 +70,76 @@ internal class Program
 
         var app = builder.Build();
 
-        // ---- Dev DB migrate + synthetic seed (idempotent) ----
+        // dev errors visible
         if (app.Environment.IsDevelopment())
         {
-            using var scope = app.Services.CreateScope();
-            var db = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
-
-            // Apply EF migrations first
-            await db.Database.MigrateAsync();
-
-            // Optional toggle in appsettings.Development.json:
-            // "Seed": { "Enabled": true }
-            var seedEnabled = app.Configuration.GetValue<bool?>("Seed:Enabled") ?? true;
-            if (seedEnabled)
-            {
-                // Seeds ~860 schools and ~241k students with plausible vaccine histories.
-                await DevSeeder.SeedAsync(db, targetStudentCount: 241_000, schoolCount: 860);
-            }
+            app.UseDeveloperExceptionPage();
         }
 
-        // ---- One-time Identity user creation (after DB is ready) ----
-        if (app.Configuration.GetValue<bool>("OneTimeCreateUsers"))
+        // ensure schema exists BEFORE user bootstrap (one scope)
+        using (var scope = app.Services.CreateScope())
         {
-            using var scope = app.Services.CreateScope();
-            var userManager = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
-            var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+            var services = scope.ServiceProvider;
 
-            string[] roles = { "Admin", "SchoolNurse", "Viewer" };
-            foreach (var r in roles)
-                if (!await roleManager.RoleExistsAsync(r))
-                    await roleManager.CreateAsync(new IdentityRole(r));
+            var db = services.GetRequiredService<ApplicationDbContext>();
+            await db.Database.MigrateAsync();   // fresh DB filename is fine (vaxsync_dev2.db)
 
-            async Task Ensure(string email, string pass, string role, string? schoolId = null)
+            if (app.Configuration.GetValue<bool>("OneTimeCreateUsers"))
             {
-                var u = await userManager.FindByEmailAsync(email);
-                if (u == null)
-                {
-                    u = new ApplicationUser { UserName = email, Email = email, EmailConfirmed = true, SchoolId = schoolId };
-                    var res = await userManager.CreateAsync(u, pass);
-                    if (!res.Succeeded) throw new Exception(string.Join(", ", res.Errors.Select(e => e.Description)));
-                }
-                if (!await userManager.IsInRoleAsync(u, role))
-                    await userManager.AddToRoleAsync(u, role);
-            }
+                var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
+                var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
 
-            await Ensure("admin@vaxsync.local", "Admin123!", "Admin");
-            await Ensure("nurse@vaxsync.local", "Nurse123!", "SchoolNurse", "SCH0001");
-            await Ensure("viewer@vaxsync.local", "Viewer123!", "Viewer");
+                string[] roles = { "Admin", "SchoolNurse", "Viewer" };
+                foreach (var r in roles)
+                    if (!await roleManager.RoleExistsAsync(r))
+                        await roleManager.CreateAsync(new IdentityRole(r));
+
+                async Task Ensure(string email, string pass, string role, string? schoolId = null)
+                {
+                    var u = await userManager.FindByEmailAsync(email);
+                    if (u == null)
+                    {
+                        u = new ApplicationUser { UserName = email, Email = email, EmailConfirmed = true, SchoolId = schoolId };
+                        var res = await userManager.CreateAsync(u, pass);
+                        if (!res.Succeeded) throw new Exception(string.Join(", ", res.Errors.Select(e => e.Description)));
+                    }
+                    if (!await userManager.IsInRoleAsync(u, role))
+                        await userManager.AddToRoleAsync(u, role);
+                }
+
+                await Ensure("admin@vaxsync.local", "Admin123!", "Admin");
+                await Ensure("nurse@vaxsync.local", "Nurse123!", "SchoolNurse", "SCH0001");
+                await Ensure("viewer@vaxsync.local", "Viewer123!", "Viewer");
+            }
         }
 
         // ---- Pipeline ----
         if (app.Environment.IsDevelopment())
-        {
-            app.UseMigrationsEndPoint();
+            {
+                app.UseMigrationsEndPoint();
+            }
+            else
+            {
+                app.UseExceptionHandler("/Error", createScopeForErrors: true);
+                app.UseHsts();
+            }
+
+            app.UseHttpsRedirection();
+            app.UseStaticFiles();
+
+            app.UseRouting();
+
+            app.UseAuthentication();
+            app.UseAuthorization();
+
+            app.UseAntiforgery();
+
+            app.MapRazorComponents<App>()
+               .AddInteractiveServerRenderMode();
+
+            app.MapAdditionalIdentityEndpoints();
+
+
+            app.Run();
         }
-        else
-        {
-            app.UseExceptionHandler("/Error", createScopeForErrors: true);
-            app.UseHsts();
-        }
-
-        app.UseHttpsRedirection();
-        app.UseStaticFiles();
-
-        app.UseRouting();
-
-        app.UseAuthentication();
-        app.UseAuthorization();
-
-        app.UseAntiforgery();
-
-        app.MapRazorComponents<App>()
-           .AddInteractiveServerRenderMode();
-
-        app.MapAdditionalIdentityEndpoints();
-
-
-        app.Run();
     }
-}

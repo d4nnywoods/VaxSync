@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\DMT_3\\source\\repos\\d4nnywoods\\VaxSync\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F67E7137-3CF4-1FE2-F981-B3FC92275BB6}|VaxSync.Web.csproj|c:\\users\\dmt_3\\source\\repos\\d4nnywoods\\vaxsync\\components\\pages\\ping.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F67E7137-3CF4-1FE2-F981-B3FC92275BB6}|VaxSync.Web.csproj|solutionrelative:components\\pages\\ping.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F67E7137-3CF4-1FE2-F981-B3FC92275BB6}|VaxSync.Web.csproj|c:\\users\\dmt_3\\source\\repos\\d4nnywoods\\vaxsync\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F67E7137-3CF4-1FE2-F981-B3FC92275BB6}|VaxSync.Web.csproj|solutionrelative:components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F67E7137-3CF4-1FE2-F981-B3FC92275BB6}|VaxSync.Web.csproj|c:\\users\\dmt_3\\source\\repos\\d4nnywoods\\vaxsync\\components\\account\\shared\\managelayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F67E7137-3CF4-1FE2-F981-B3FC92275BB6}|VaxSync.Web.csproj|solutionrelative:components\\account\\shared\\managelayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F67E7137-3CF4-1FE2-F981-B3FC92275BB6}|VaxSync.Web.csproj|c:\\users\\dmt_3\\source\\repos\\d4nnywoods\\vaxsync\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F67E7137-3CF4-1FE2-F981-B3FC92275BB6}|VaxSync.Web.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F67E7137-3CF4-1FE2-F981-B3FC92275BB6}|VaxSync.Web.csproj|c:\\users\\dmt_3\\source\\repos\\d4nnywoods\\vaxsync\\components\\account\\pages\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F67E7137-3CF4-1FE2-F981-B3FC92275BB6}|VaxSync.Web.csproj|solutionrelative:components\\account\\pages\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F67E7137-3CF4-1FE2-F981-B3FC92275BB6}|VaxSync.Web.csproj|c:\\users\\dmt_3\\source\\repos\\d4nnywoods\\vaxsync\\components\\pages\\dashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F67E7137-3CF4-1FE2-F981-B3FC92275BB6}|VaxSync.Web.csproj|solutionrelative:components\\pages\\dashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F67E7137-3CF4-1FE2-F981-B3FC92275BB6}|VaxSync.Web.csproj|c:\\users\\dmt_3\\source\\repos\\d4nnywoods\\vaxsync\\components\\account\\pages\\manage\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F67E7137-3CF4-1FE2-F981-B3FC92275BB6}|VaxSync.Web.csproj|solutionrelative:components\\account\\pages\\manage\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F67E7137-3CF4-1FE2-F981-B3FC92275BB6}|VaxSync.Web.csproj|c:\\users\\dmt_3\\source\\repos\\d4nnywoods\\vaxsync\\components\\account\\pages\\start.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F67E7137-3CF4-1FE2-F981-B3FC92275BB6}|VaxSync.Web.csproj|solutionrelative:components\\account\\pages\\start.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F67E7137-3CF4-1FE2-F981-B3FC92275BB6}|VaxSync.Web.csproj|c:\\users\\dmt_3\\source\\repos\\d4nnywoods\\vaxsync\\components\\account\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F67E7137-3CF4-1FE2-F981-B3FC92275BB6}|VaxSync.Web.csproj|solutionrelative:components\\account\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F67E7137-3CF4-1FE2-F981-B3FC92275BB6}|VaxSync.Web.csproj|c:\\users\\dmt_3\\source\\repos\\d4nnywoods\\vaxsync\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -31,8 +35,24 @@
       "RelativeMoniker": "D:0:0:{F67E7137-3CF4-1FE2-F981-B3FC92275BB6}|VaxSync.Web.csproj|solutionrelative:components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F67E7137-3CF4-1FE2-F981-B3FC92275BB6}|VaxSync.Web.csproj|c:\\users\\dmt_3\\source\\repos\\d4nnywoods\\vaxsync\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F67E7137-3CF4-1FE2-F981-B3FC92275BB6}|VaxSync.Web.csproj|solutionrelative:components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F67E7137-3CF4-1FE2-F981-B3FC92275BB6}|VaxSync.Web.csproj|c:\\users\\dmt_3\\source\\repos\\d4nnywoods\\vaxsync\\components\\account\\pages\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F67E7137-3CF4-1FE2-F981-B3FC92275BB6}|VaxSync.Web.csproj|solutionrelative:components\\account\\pages\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F67E7137-3CF4-1FE2-F981-B3FC92275BB6}|VaxSync.Web.csproj|c:\\users\\dmt_3\\source\\repos\\d4nnywoods\\vaxsync\\components\\account\\pages\\manage\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F67E7137-3CF4-1FE2-F981-B3FC92275BB6}|VaxSync.Web.csproj|solutionrelative:components\\account\\pages\\manage\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F67E7137-3CF4-1FE2-F981-B3FC92275BB6}|VaxSync.Web.csproj|c:\\users\\dmt_3\\source\\repos\\d4nnywoods\\vaxsync\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F67E7137-3CF4-1FE2-F981-B3FC92275BB6}|VaxSync.Web.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F67E7137-3CF4-1FE2-F981-B3FC92275BB6}|VaxSync.Web.csproj|c:\\users\\dmt_3\\source\\repos\\d4nnywoods\\vaxsync\\data\\devseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F67E7137-3CF4-1FE2-F981-B3FC92275BB6}|VaxSync.Web.csproj|solutionrelative:data\\devseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F67E7137-3CF4-1FE2-F981-B3FC92275BB6}|VaxSync.Web.csproj|c:\\users\\dmt_3\\source\\repos\\d4nnywoods\\vaxsync\\components\\account\\shared\\managelayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F67E7137-3CF4-1FE2-F981-B3FC92275BB6}|VaxSync.Web.csproj|solutionrelative:components\\account\\shared\\managelayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,15 +66,41 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ManageLayout.razor",
-              "DocumentMoniker": "C:\\Users\\DMT_3\\source\\repos\\d4nnywoods\\VaxSync\\Components\\Account\\Shared\\ManageLayout.razor",
-              "RelativeDocumentMoniker": "Components\\Account\\Shared\\ManageLayout.razor",
-              "ToolTip": "C:\\Users\\DMT_3\\source\\repos\\d4nnywoods\\VaxSync\\Components\\Account\\Shared\\ManageLayout.razor",
-              "RelativeToolTip": "Components\\Account\\Shared\\ManageLayout.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Dashboard.razor",
+              "DocumentMoniker": "C:\\Users\\DMT_3\\source\\repos\\d4nnywoods\\VaxSync\\Components\\Pages\\Dashboard.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Dashboard.razor",
+              "ToolTip": "C:\\Users\\DMT_3\\source\\repos\\d4nnywoods\\VaxSync\\Components\\Pages\\Dashboard.razor",
+              "RelativeToolTip": "Components\\Pages\\Dashboard.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-17T18:51:45.691Z",
+              "WhenOpened": "2025-10-17T20:18:57.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\DMT_3\\source\\repos\\d4nnywoods\\VaxSync\\Components\\Account\\_Imports.razor",
+              "RelativeDocumentMoniker": "Components\\Account\\_Imports.razor",
+              "ToolTip": "C:\\Users\\DMT_3\\source\\repos\\d4nnywoods\\VaxSync\\Components\\Account\\_Imports.razor",
+              "RelativeToolTip": "Components\\Account\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-17T20:16:38.26Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\DMT_3\\source\\repos\\d4nnywoods\\VaxSync\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\DMT_3\\source\\repos\\d4nnywoods\\VaxSync\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAuwEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T19:42:21.97Z",
               "EditorCaption": ""
             },
             {
@@ -250,33 +296,116 @@
               "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "NavMenu.razor",
-              "DocumentMoniker": "C:\\Users\\DMT_3\\source\\repos\\d4nnywoods\\VaxSync\\Components\\Layout\\NavMenu.razor",
-              "RelativeDocumentMoniker": "Components\\Layout\\NavMenu.razor",
-              "ToolTip": "C:\\Users\\DMT_3\\source\\repos\\d4nnywoods\\VaxSync\\Components\\Layout\\NavMenu.razor",
-              "RelativeToolTip": "Components\\Layout\\NavMenu.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-17T18:47:42.608Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\DMT_3\\source\\repos\\d4nnywoods\\VaxSync\\Components\\_Imports.razor",
+              "RelativeDocumentMoniker": "Components\\_Imports.razor",
+              "ToolTip": "C:\\Users\\DMT_3\\source\\repos\\d4nnywoods\\VaxSync\\Components\\_Imports.razor",
+              "RelativeToolTip": "Components\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-17T18:32:38.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "_Imports.razor",
               "DocumentMoniker": "C:\\Users\\DMT_3\\source\\repos\\d4nnywoods\\VaxSync\\Components\\Account\\Pages\\Manage\\_Imports.razor",
               "RelativeDocumentMoniker": "Components\\Account\\Pages\\Manage\\_Imports.razor",
               "ToolTip": "C:\\Users\\DMT_3\\source\\repos\\d4nnywoods\\VaxSync\\Components\\Account\\Pages\\Manage\\_Imports.razor",
               "RelativeToolTip": "Components\\Account\\Pages\\Manage\\_Imports.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-10-17T18:43:00.777Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\DMT_3\\source\\repos\\d4nnywoods\\VaxSync\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "Components\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\DMT_3\\source\\repos\\d4nnywoods\\VaxSync\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "Components\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-17T18:40:20.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Users\\DMT_3\\source\\repos\\d4nnywoods\\VaxSync\\Components\\App.razor",
+              "RelativeDocumentMoniker": "Components\\App.razor",
+              "ToolTip": "C:\\Users\\DMT_3\\source\\repos\\d4nnywoods\\VaxSync\\Components\\App.razor",
+              "RelativeToolTip": "Components\\App.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-17T18:26:03.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\DMT_3\\source\\repos\\d4nnywoods\\VaxSync\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\DMT_3\\source\\repos\\d4nnywoods\\VaxSync\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "Components\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAMAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-17T18:47:42.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Start.razor",
+              "DocumentMoniker": "C:\\Users\\DMT_3\\source\\repos\\d4nnywoods\\VaxSync\\Components\\Account\\Pages\\Start.razor",
+              "RelativeDocumentMoniker": "Components\\Account\\Pages\\Start.razor",
+              "ToolTip": "C:\\Users\\DMT_3\\source\\repos\\d4nnywoods\\VaxSync\\Components\\Account\\Pages\\Start.razor",
+              "RelativeToolTip": "Components\\Account\\Pages\\Start.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-17T19:18:28.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\DMT_3\\source\\repos\\d4nnywoods\\VaxSync\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "C:\\Users\\DMT_3\\source\\repos\\d4nnywoods\\VaxSync\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-17T19:27:55.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DevSeeder.cs",
+              "DocumentMoniker": "C:\\Users\\DMT_3\\source\\repos\\d4nnywoods\\VaxSync\\Data\\DevSeeder.cs",
+              "RelativeDocumentMoniker": "Data\\DevSeeder.cs",
+              "ToolTip": "C:\\Users\\DMT_3\\source\\repos\\d4nnywoods\\VaxSync\\Data\\DevSeeder.cs",
+              "RelativeToolTip": "Data\\DevSeeder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T19:53:40.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "_Imports.razor",
               "DocumentMoniker": "C:\\Users\\DMT_3\\source\\repos\\d4nnywoods\\VaxSync\\Components\\Account\\Pages\\_Imports.razor",
               "RelativeDocumentMoniker": "Components\\Account\\Pages\\_Imports.razor",
@@ -289,52 +418,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MainLayout.razor",
-              "DocumentMoniker": "C:\\Users\\DMT_3\\source\\repos\\d4nnywoods\\VaxSync\\Components\\Layout\\MainLayout.razor",
-              "RelativeDocumentMoniker": "Components\\Layout\\MainLayout.razor",
-              "ToolTip": "C:\\Users\\DMT_3\\source\\repos\\d4nnywoods\\VaxSync\\Components\\Layout\\MainLayout.razor",
-              "RelativeToolTip": "Components\\Layout\\MainLayout.razor",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "ManageLayout.razor",
+              "DocumentMoniker": "C:\\Users\\DMT_3\\source\\repos\\d4nnywoods\\VaxSync\\Components\\Account\\Shared\\ManageLayout.razor",
+              "RelativeDocumentMoniker": "Components\\Account\\Shared\\ManageLayout.razor",
+              "ToolTip": "C:\\Users\\DMT_3\\source\\repos\\d4nnywoods\\VaxSync\\Components\\Account\\Shared\\ManageLayout.razor",
+              "RelativeToolTip": "Components\\Account\\Shared\\ManageLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-17T18:40:20.128Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "_Imports.razor",
-              "DocumentMoniker": "C:\\Users\\DMT_3\\source\\repos\\d4nnywoods\\VaxSync\\Components\\_Imports.razor",
-              "RelativeDocumentMoniker": "Components\\_Imports.razor",
-              "ToolTip": "C:\\Users\\DMT_3\\source\\repos\\d4nnywoods\\VaxSync\\Components\\_Imports.razor",
-              "RelativeToolTip": "Components\\_Imports.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-17T18:32:38.995Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "App.razor",
-              "DocumentMoniker": "C:\\Users\\DMT_3\\source\\repos\\d4nnywoods\\VaxSync\\Components\\App.razor",
-              "RelativeDocumentMoniker": "Components\\App.razor",
-              "ToolTip": "C:\\Users\\DMT_3\\source\\repos\\d4nnywoods\\VaxSync\\Components\\App.razor",
-              "RelativeToolTip": "Components\\App.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-17T18:26:03.422Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Ping.razor",
-              "DocumentMoniker": "C:\\Users\\DMT_3\\source\\repos\\d4nnywoods\\VaxSync\\Components\\Pages\\Ping.razor",
-              "RelativeDocumentMoniker": "Components\\Pages\\Ping.razor",
-              "ToolTip": "C:\\Users\\DMT_3\\source\\repos\\d4nnywoods\\VaxSync\\Components\\Pages\\Ping.razor",
-              "RelativeToolTip": "Components\\Pages\\Ping.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-17T18:18:55.757Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-17T18:51:45.691Z"
             }
           ]
         },

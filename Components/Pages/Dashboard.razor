@@ -13,15 +13,20 @@
         if (!firstRender) return;
 
         var state = await AuthState.GetAuthenticationStateAsync();
-        var user = state.User;
+        var user = state?.User;
 
-        if (user.IsInRole("Admin"))
-            Nav.NavigateTo("/admin-dashboard", replace: true);
-        else if (user.IsInRole("SchoolNurse"))
-            Nav.NavigateTo("/nurse-dashboard", replace: true);
-        else if (user.IsInRole("Viewer"))
-            Nav.NavigateTo("/viewer-dashboard", replace: true);
-        else
+        if (user?.Identity?.IsAuthenticated != true)
+        {
             Nav.NavigateTo("/", replace: true);
+            return;
+        }
+
+        string? target = user.IsInRole("Admin") ? "/admin-dashboard" :
+                         user.IsInRole("SchoolNurse") ? "/nurse-dashboard" :
+                         user.IsInRole("Viewer") ? "/viewer-dashboard" :
+                         "/";
+
+        if (!Nav.Uri.EndsWith(target, StringComparison.OrdinalIgnoreCase))
+            Nav.NavigateTo(target, replace: true);
     }
 }
