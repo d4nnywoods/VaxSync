@@ -11138,6 +11138,7 @@
       "path": "system.runtime.interopservices.runtimeinformation/4.0.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -12534,23 +12535,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DMT_3\\.nuget\\packages\\": {},
+    "C:\\Users\\sande\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DMT_3\\source\\repos\\d4nnywoods\\VaxSync\\VaxSync.Web.csproj",
+      "projectUniqueName": "C:\\Users\\sande\\OneDrive\\Imágenes\\Vaxsync\\VaxSync\\VaxSync.Web.csproj",
       "projectName": "VaxSync.Web",
-      "projectPath": "C:\\Users\\DMT_3\\source\\repos\\d4nnywoods\\VaxSync\\VaxSync.Web.csproj",
-      "packagesPath": "C:\\Users\\DMT_3\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DMT_3\\source\\repos\\d4nnywoods\\VaxSync\\obj\\",
+      "projectPath": "C:\\Users\\sande\\OneDrive\\Imágenes\\Vaxsync\\VaxSync\\VaxSync.Web.csproj",
+      "packagesPath": "C:\\Users\\sande\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sande\\OneDrive\\Imágenes\\Vaxsync\\VaxSync\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\DMT_3\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sande\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -12559,7 +12560,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

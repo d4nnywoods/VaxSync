@@ -1,7 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\DMT_3\\source\\repos\\d4nnywoods\\VaxSync\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\sande\\OneDrive\\Im\u00E1genes\\Vaxsync\\VaxSync\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F67E7137-3CF4-1FE2-F981-B3FC92275BB6}|VaxSync.Web.csproj|c:\\users\\sande\\onedrive\\im\u00E1genes\\vaxsync\\vaxsync\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F67E7137-3CF4-1FE2-F981-B3FC92275BB6}|VaxSync.Web.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,23 +14,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:738368713:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:2094182168:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sande\\OneDrive\\Im\u00E1genes\\Vaxsync\\VaxSync\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\sande\\OneDrive\\Im\u00E1genes\\Vaxsync\\VaxSync\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T12:36:14.438Z",
+              "EditorCaption": ""
             }
           ]
         }
