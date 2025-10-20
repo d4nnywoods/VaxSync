@@ -18,17 +18,11 @@ internal sealed class IdentityRedirectManager(NavigationManager navigationManage
     [DoesNotReturn]
     public void RedirectTo(string? uri)
     {
-        uri ??= "";
-
-        // Prevent open redirects.
-        if (!Uri.IsWellFormedUriString(uri, UriKind.Relative))
-        {
-            uri = navigationManager.ToBaseRelativePath(uri);
-        }
+        var destination = NormalizeDestination(uri);
 
         // During static rendering, NavigateTo throws a NavigationException which is handled by the framework as a redirect.
         // So as long as this is called from a statically rendered Identity component, the InvalidOperationException is never thrown.
-        navigationManager.NavigateTo(uri);
+        navigationManager.NavigateTo(destination, forceLoad: true);
         throw new InvalidOperationException($"{nameof(IdentityRedirectManager)} can only be used during static rendering.");
     }
 
@@ -55,4 +49,38 @@ internal sealed class IdentityRedirectManager(NavigationManager navigationManage
     [DoesNotReturn]
     public void RedirectToCurrentPageWithStatus(string message, HttpContext context)
         => RedirectToWithStatus(CurrentPath, message, context);
+
+    private string NormalizeDestination(string? uri)
+    {
+        var destination = uri?.Trim();
+
+        if (string.IsNullOrEmpty(destination))
+        {
+            return "/";
+        }
+
+        // Prevent open redirects by forcing everything to this application's base URI.
+        if (!Uri.IsWellFormedUriString(destination, UriKind.Relative))
+        {
+            destination = navigationManager.ToBaseRelativePath(destination);
+        }
+
+        if (string.IsNullOrEmpty(destination) || destination == "?")
+        {
+            return "/";
+        }
+
+        if (destination.StartsWith("//", StringComparison.Ordinal))
+        {
+            destination = destination.TrimStart('/');
+        }
+
+        if (!destination.StartsWith('/', StringComparison.Ordinal) &&
+            !destination.StartsWith('?', StringComparison.Ordinal))
+        {
+            destination = $"/{destination}";
+        }
+
+        return destination;
+    }
 }
