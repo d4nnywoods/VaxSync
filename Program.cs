@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Components.Authorization;
+﻿using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
@@ -52,16 +52,16 @@ internal class Program
             .AddSignInManager()
             .AddDefaultTokenProviders();
 
-        /* Commented out login redirect configuration so navigation works without signing in.
+        /*Commented out login redirect configuration so navigation works without signing in.*/
         builder.Services.ConfigureApplicationCookie(options =>
-        {
+        {   
             options.LoginPath = "/Account/Login";
             options.LogoutPath = "/Account/Logout";
             options.AccessDeniedPath = "/Account/AccessDenied";
             options.SlidingExpiration = true;
             options.ExpireTimeSpan = TimeSpan.FromMinutes(30);
         });
-        */
+        
 
         // Blazor auth helpers for AuthorizeView etc.
         builder.Services.AddCascadingAuthenticationState();

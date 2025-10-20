@@ -71,6 +71,16 @@
                 <MudText Typo="Typo.subtitle1" Class="opacity-75 mb-4">
                     Track compliance, view alerts, and export records with confidence.
                 </MudText>
+
+                <div class="vx-buttons">
+                    <MudButton Variant="Variant.Filled"
+                               Color="Color.Primary"
+                               Href="Account/Login"
+                               LinkTarget="_self"
+                               ForceLoad="true">
+                        Sign in
+                    </MudButton>
+                </div>
             </section>
 
             <section class="vx-right">
@@ -128,5 +138,10 @@
         }
 
         return "/";
+    }
+
+    private void NavigateToLogin()
+    {
+        Nav.NavigateTo("/Account/Login", true);
     }
 }

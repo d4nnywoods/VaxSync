@@ -5,7 +5,9 @@
 @using VaxSync.Web.Components.Account.Shared
 @using VaxSync.Web.Components.Layout
 @using MudBlazor
+@using System.Security.Claims
 
+@inject NavigationManager Navigation
 
 <!DOCTYPE html>
 <html lang="en">
@@ -24,13 +26,82 @@
     <MudPopoverProvider />
     <MudDialogProvider />
     <MudSnackbarProvider />
-    <Router AppAssembly="@typeof(Program).Assembly">
-        <Found Context="routeData">
-            @* Replaced the AuthorizeRouteView so pages can be browsed without logging in *@
-            <RouteView RouteData="routeData" DefaultLayout="typeof(Layout.MainLayout)" />
-            <FocusOnNavigate RouteData="routeData" Selector="h1" />
-        </Found>
-    </Router>
+
+    <!-- ✅ Cascading Authentication State -->
+    <CascadingAuthenticationState>
+        <AuthorizeView>
+            <Authorized Context="authState">
+                @{
+                    var user = authState.User;
+                    var uri = new Uri(Navigation.Uri).AbsolutePath;
+
+                    if (user.Identity?.IsAuthenticated == true)
+                    {
+                        // ✅ Role-based redirect (only if not already there)
+                        if (user.IsInRole("Admin") && !uri.StartsWith("/admin-dashboard", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Navigation.NavigateTo("/admin-dashboard", true);
+                        }
+                        else if (user.IsInRole("SchoolNurse") && !uri.StartsWith("/nurse-dashboard", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Navigation.NavigateTo("/nurse-dashboard", true);
+                        }
+                        else if (user.IsInRole("Viewer") && !uri.StartsWith("/viewer-dashboard", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Navigation.NavigateTo("/viewer-dashboard", true);
+                        }
+                    }
+                }
+
+                <!-- ✅ Router for logged-in users -->
+                <Router AppAssembly="@typeof(Program).Assembly">
+                    <Found Context="routeData">
+                        <AuthorizeRouteView RouteData="routeData" DefaultLayout="typeof(MainLayout)">
+                            <NotAuthorized>
+                                <LayoutView Layout="typeof(MainLayout)">
+                                    <MudAlert Severity="Severity.Warning" Class="m-4">
+                                        You are not authorized to view this page.
+                                    </MudAlert>
+                                </LayoutView>
+                            </NotAuthorized>
+                            <Authorizing>
+                                <LayoutView Layout="typeof(MainLayout)">
+                                    <MudProgressCircular Indeterminate="true"
+                                                         Color="Color.Primary"
+                                                         Size="Size.Large"
+                                                         Class="m-6" />
+                                </LayoutView>
+                            </Authorizing>
+                        </AuthorizeRouteView>
+                        <FocusOnNavigate RouteData="routeData" Selector="h1" />
+                    </Found>
+                    <NotFound>
+                        <LayoutView Layout="typeof(MainLayout)">
+                            <MudAlert Severity="Severity.Error" Class="m-4">
+                                Sorry, the page could not be found.
+                            </MudAlert>
+                        </LayoutView>
+                    </NotFound>
+                </Router>
+            </Authorized>
+
+            <NotAuthorized>
+                <!-- ✅ Router for guests (Login, Register, etc.) -->
+                <Router AppAssembly="@typeof(Program).Assembly">
+                    <Found Context="routeData">
+                        <RouteView RouteData="routeData" DefaultLayout="typeof(MainLayout)" />
+                    </Found>
+                    <NotFound>
+                        <LayoutView Layout="typeof(MainLayout)">
+                            <MudAlert Severity="Severity.Error" Class="m-4">
+                                Sorry, the page could not be found.
+                            </MudAlert>
+                        </LayoutView>
+                    </NotFound>
+                </Router>
+            </NotAuthorized>
+        </AuthorizeView>
+    </CascadingAuthenticationState>
 
     <script src="_framework/blazor.web.js"></script>
     <script src="_content/MudBlazor/MudBlazor.min.js"></script>
